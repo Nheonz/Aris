@@ -1,0 +1,256 @@
+/* =======================================
+   ESTILOS BASE Y CONFIGURACIÓN GENERAL
+======================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fffef8;
+}
+
+/* Espaciado global entre secciones */
+.section {
+  padding: 4rem 1rem;
+}
+
+/* Títulos generales */
+.section__title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1a3d2c;
+}
+
+/* =======================================
+   HEADER (logo + navegación principal)
+======================================= */
+.header {
+  background-color: #d6f8dc;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header__logo img {
+  max-height: 50px;
+}
+
+.header__nav .nav__list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: #1a3d2c;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.header__nav a:hover {
+  color: #4caf50;
+}
+
+/* =======================================
+   HOME SECTION
+======================================= */
+.home__banner {
+  position: relative;
+  text-align: center;
+}
+
+.home__banner img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.home__menu-button {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.home__social-icons {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.home__social-icons img {
+  width: 30px;
+}
+
+/* =======================================
+   ABOUT SECTION
+======================================= */
+.about__subtitle {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about__text {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about__image {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+/* =======================================
+   PRODUCTS SECTION (Carrusel simulado)
+======================================= */
+.products__subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.products__grid {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  padding: 0 1rem;
+}
+
+.products__grid img {
+  width: 180px;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* =======================================
+   DATES SECTION
+======================================= */
+.dates__qrs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.dates__info {
+  text-align: center;
+}
+
+.dates__title {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+}
+
+.dates__locations {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+
+.dates__map {
+  max-width: 400px;
+  margin: 1rem auto;
+  display: block;
+}
+
+.dates__button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+/* =======================================
+   CONTACT SECTION
+======================================= */
+.contact {
+  background: linear-gradient(to bottom, #f0f0f0, #ffffff);
+  padding: 4rem 1rem;
+}
+
+.contact__form {
+  max-width: 600px;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  background: white;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.contact__form input,
+.contact__form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact__form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact__image {
+  display: block;
+  margin: 2rem auto 0;
+  max-width: 200px;
+}
+
+/* =======================================
+   FOOTER
+======================================= */
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #4caf50;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.footer a {
+  color: white;
+  margin: 0 0.5rem;
+}

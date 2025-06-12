@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aris</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- ===========================
+       HEADER DE NAVEGACIÓN 
+  ============================ -->
+    <header class="header">
+      <div class="header__container">
+        <!-- Logo a la izquierda -->
+        <div class="header__logo">
+          <img src="logo-aris.png" alt="Logo Aris" />
+        </div>
+
+        <!-- Menú de navegación con anclas a secciones -->
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#dates">Dates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===========================
+       SECCIÓN: HOME
+  ============================ -->
+    <section id="home" class="section home">
+      <div class="home__banner">
+        <img src="banner-arepa.jpg" alt="Food truck Aris" />
+        <button class="home__menu-button">VER NUESTRO MENÚ</button>
+
+        <!-- Íconos de redes sociales -->
+        <div class="home__social-icons">
+          <a href="#"><img src="icon-instagram.png" alt="Instagram" /></a>
+          <a href="#"><img src="icon-facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="icon-twitter.png" alt="Twitter" /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+       SECCIÓN: ABOUT US
+  ============================ -->
+    <section id="about" class="section about">
+      <h2 class="section__title">About us</h2>
+      <h3 class="about__subtitle">Aris: una arepa con historia</h3>
+      <p class="about__text">
+        Aris nació con la visión de compartir la tradición culinaria venezolana.
+        Con cada arepa, pastelito y tequeño, nuestra meta es brindar alegría y
+        autenticidad en cada bocado.
+      </p>
+      <img
+        src="truck-venezolano.png"
+        alt="Camión Aris con bandera venezolana"
+        class="about__image"
+      />
+    </section>
+
+    <!-- ===========================
+       SECCIÓN: PRODUCTS
+  ============================ -->
+    <section id="products" class="section products">
+      <h2 class="section__title">FAVORITE FOOD</h2>
+      <h3 class="products__subtitle">Nuestros platos más pedidos</h3>
+      <div class="products__grid">
+        <img src="product1.jpg" alt="Plato 1" />
+        <img src="product2.jpg" alt="Plato 2" />
+        <img src="product3.jpg" alt="Plato 3" />
+        <img src="product4.jpg" alt="Plato 4" />
+      </div>
+    </section>
+
+    <!-- ===========================
+       SECCIÓN: DATES
+  ============================ -->
+    <section id="dates" class="section dates">
+      <div class="dates__qrs">
+        <img src="qr1.png" alt="QR menú" />
+        <img src="qr2.png" alt="QR redes" />
+      </div>
+      <div class="dates__info">
+        <p class="dates__title">Come, enjoy with us!</p>
+        <div class="dates__locations">
+          <div><strong>Winwood Park</strong><br />Lunes - Domingo</div>
+          <div><strong>Meryl St. 401</strong><br />Sábados y feriados</div>
+        </div>
+        <img src="mapa.png" alt="Mapa de ubicación" class="dates__map" />
+        <button class="dates__button">Más información</button>
+      </div>
+    </section>
+
+    <!-- ===========================
+       SECCIÓN: CONTACT
+  ============================ -->
+    <section id="contact" class="section contact">
+      <h2 class="section__title">Planning an Event?<br />Let’s Talk!</h2>
+      <form class="contact__form">
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea placeholder="Cuéntanos qué necesitas..."></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <img src="mini-truck.png" alt="Mini camión Aris" class="contact__image" />
+    </section>
+
+    <!-- ===========================
+       FOOTER
+  ============================ -->
+    <footer class="footer">
+      <div>
+        <a href="#"><img src="icon-instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="icon-facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="icon-tiktok.png" alt="TikTok" /></a>
+      </div>
+      <p>© 2025 Aris. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
