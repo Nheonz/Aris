@@ -15,7 +15,10 @@
       <div class="header__container">
         <!-- Logo a la izquierda -->
         <div class="header__logo">
-          <img src="logo-aris.png" alt="Logo Aris" />
+          <img
+            src="img/242642197_111993074565451_2735216135048740337_n-Photoroom 1.png"
+            alt="Logo Aris"
+          />
         </div>
 
         <!-- Menú de navegación con anclas a secciones -->
@@ -34,34 +37,36 @@
     <!-- ===========================
        SECCIÓN: HOME
   ============================ -->
-    <section id="home" class="section home">
+    <section id="home" class="active">
       <div class="home__banner">
-        <img src="banner-arepa.jpg" alt="Food truck Aris" />
+        <img
+          src="img/Imagen de WhatsApp 2025-06-02 a las 16.45.20_eb76b543 1.png"
+          alt="Food truck Aris"
+        />
         <button class="home__menu-button">VER NUESTRO MENÚ</button>
-
-        <!-- Íconos de redes sociales -->
-        <div class="home__social-icons">
-          <a href="#"><img src="icon-instagram.png" alt="Instagram" /></a>
-          <a href="#"><img src="icon-facebook.png" alt="Facebook" /></a>
-          <a href="#"><img src="icon-twitter.png" alt="Twitter" /></a>
-        </div>
       </div>
     </section>
 
     <!-- ===========================
        SECCIÓN: ABOUT US
   ============================ -->
-    <section id="about" class="section about">
-      <h2 class="section__title">About us</h2>
-      <h3 class="about__subtitle">Aris: una arepa con historia</h3>
-      <p class="about__text">
-        Aris nació con la visión de compartir la tradición culinaria venezolana.
-        Con cada arepa, pastelito y tequeño, nuestra meta es brindar alegría y
-        autenticidad en cada bocado.
-      </p>
+    <section id="about" class="about">
+      <div>
+        <h3 class="about__subtitle">About Us</h3>
+        <h2 class="about__title">
+          ARIS: One tradition<br />
+          with history
+          <img src="img/ve.png" alt="Venezuelan flag" class="flag-inline" />
+        </h2>
+        <p class="about__text">
+          Aris was born with the vision of sharing Venezuelan culinary
+          traditions. With every arepa, pastelito, and tequeño, our goal is to
+          bring joy with every bite.
+        </p>
+      </div>
       <img
-        src="truck-venezolano.png"
-        alt="Camión Aris con bandera venezolana"
+        src="img/Imagen de WhatsApp 2025-05-30 a las 19.13.22_ba294299-Photoroom 1.png"
+        alt="Food truck Aris"
         class="about__image"
       />
     </section>
@@ -70,13 +75,91 @@
        SECCIÓN: PRODUCTS
   ============================ -->
     <section id="products" class="section products">
-      <h2 class="section__title">FAVORITE FOOD</h2>
-      <h3 class="products__subtitle">Nuestros platos más pedidos</h3>
-      <div class="products__grid">
-        <img src="product1.jpg" alt="Plato 1" />
-        <img src="product2.jpg" alt="Plato 2" />
-        <img src="product3.jpg" alt="Plato 3" />
-        <img src="product4.jpg" alt="Plato 4" />
+      <div class="products__headings">
+        <h2 class="section__title">FAVORITE FOOD</h2>
+        <h3 class="products__subtitle">Our most requested dishes</h3>
+      </div>
+
+      <div class="products__carousel-wrapper">
+        <img
+          src="img/weui_arrow-outlined (1).png"
+          alt="Previous"
+          class="carousel-arrow-img left"
+        />
+
+        <div class="products__carousel">
+          <div class="products__grid" id="carousel-track">
+            <div class="product">
+              <img
+                src="img/empanadas-venezolanas-estas-son-las-cinco-mas-consumidas 2.png"
+                alt="Mandocas"
+              />
+
+              <span class="product__label">Tequeños</span>
+            </div>
+            <div class="product">
+              <img
+                src="img/empanadas-venezolanas-estas-son-las-cinco-mas-consumidas 2.png"
+                alt="Mandocas"
+              />
+
+              <span class="product__label">Empanadas</span>
+            </div>
+            <div class="product">
+              <img
+                src="img/empanadas-venezolanas-estas-son-las-cinco-mas-consumidas 2.png"
+                alt="Mandocas"
+              />
+
+              <span class="product__label">Arepas</span>
+            </div>
+            <div class="product">
+              <img
+                src="img/empanadas-venezolanas-estas-son-las-cinco-mas-consumidas 2.png"
+                alt="Mandocas"
+              />
+
+              <span class="product__label">Cachapas</span>
+            </div>
+            <div class="product">
+              <img
+                src="img/empanadas-venezolanas-estas-son-las-cinco-mas-consumidas 2.png"
+                alt="Mandocas"
+              />
+              >
+              <span class="product__label">Tostones</span>
+            </div>
+            <div class="product">
+              <img
+                src="img/empanadas-venezolanas-estas-son-las-cinco-mas-consumidas 2.png"
+                alt="Mandocas"
+              />
+
+              <span class="product__label">Pabellón</span>
+            </div>
+            <div class="product">
+              <img
+                src="img/empanadas-venezolanas-estas-son-las-cinco-mas-consumidas 2.png"
+                alt="Mandocas"
+              />
+
+              <span class="product__label">Hallacas</span>
+            </div>
+            <div class="product">
+              <img
+                src="img/empanadas-venezolanas-estas-son-las-cinco-mas-consumidas 2.png"
+                alt="Mandocas"
+              />
+              <span class="product__label">Mandocas</span>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="img/weui_arrow-outlined.png"
+          alt="Next"
+          class="carousel-arrow-img right"
+        />
       </div>
     </section>
 
@@ -84,45 +167,112 @@
        SECCIÓN: DATES
   ============================ -->
     <section id="dates" class="section dates">
-      <div class="dates__qrs">
-        <img src="qr1.png" alt="QR menú" />
-        <img src="qr2.png" alt="QR redes" />
-      </div>
-      <div class="dates__info">
-        <p class="dates__title">Come, enjoy with us!</p>
-        <div class="dates__locations">
-          <div><strong>Winwood Park</strong><br />Lunes - Domingo</div>
-          <div><strong>Meryl St. 401</strong><br />Sábados y feriados</div>
+      <div class="qr-section">
+        <div class="qr-card light-green">
+          <p>Menu</p>
+          <img src="img/450_1000-Photoroom.png" alt="QR Menu" />
         </div>
-        <img src="mapa.png" alt="Mapa de ubicación" class="dates__map" />
-        <button class="dates__button">Más información</button>
+
+        <div class="qr-card dark-green">
+          <p>Food Allergens</p>
+          <img src="img/450_1000-Photoroom.png" alt="QR Allergens" />
+        </div>
       </div>
+
+      <!-- NUEVA SECCIÓN DECORATIVA CON LORO Y TEXTO -->
+      <div class="dates__intro">
+        <div class="dates__divider">
+          <hr />
+          <img
+            src="img/ARIS foodtruck - Draft (2)/ChatGPT Image 30 may 2025, 08_33_24 p.m.-Photoroom 1.png"
+            alt="Loro"
+            class="divider__parrot"
+          />
+          <hr />
+        </div>
+        <p class="dates__title">Come, enjoy with us!</p>
+        <p class="dates__subtitle">
+          Check the locations and<br />
+          schedule of our next dates.
+        </p>
+      </div>
+
+      <div class="dates__info-wrapper">
+        <div class="dates__info">
+          <div class="dates__locations" id="location-container">
+  
+        </div>
+        
+        
+        <iframe
+          id="dynamic-map"
+          class="dates__map"
+          width="100%"
+          height="300"
+          frameborder="0"
+          style="border:0"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+          </div>
+        </div>
+      </div>
+
+      
     </section>
 
     <!-- ===========================
        SECCIÓN: CONTACT
   ============================ -->
-    <section id="contact" class="section contact">
-      <h2 class="section__title">Planning an Event?<br />Let’s Talk!</h2>
-      <form class="contact__form">
-        <input type="text" placeholder="Nombre" required />
-        <input type="email" placeholder="Correo electrónico" required />
-        <textarea placeholder="Cuéntanos qué necesitas..."></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-      <img src="mini-truck.png" alt="Mini camión Aris" class="contact__image" />
-    </section>
+   <section id="contact" class="section contact">
+  <div class="contact__header">
+    <h2 class="section__title">
+      <span class="title-highlight">Panning an event?</span><br />
+      <span class="title-bold">TAKE US WITH YOU!</span>
+    </h2>
+  </div>
+
+  <div class="contact__card">
+    <form class="contact__form">
+      <div class="contact__row">
+        <input type="text" placeholder="Full Name" required />
+        <input type="text" placeholder="+1 (345) 765 00" required />
+      </div>
+      <input type="email" placeholder="Email@domain.com" required />
+      <textarea
+        placeholder="Share the details here! Date, location, number of guests..."
+        required
+      ></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
 
     <!-- ===========================
        FOOTER
   ============================ -->
-    <footer class="footer">
-      <div>
-        <a href="#"><img src="icon-instagram.png" alt="Instagram" /></a>
-        <a href="#"><img src="icon-facebook.png" alt="Facebook" /></a>
-        <a href="#"><img src="icon-tiktok.png" alt="TikTok" /></a>
-      </div>
-      <p>© 2025 Aris. All rights reserved.</p>
-    </footer>
+    <footer class="custom-footer">
+  <div class="footer__content">
+    <div class="footer__links">
+      <a href="#">Aris Venezuelan LLC</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Kansas CL, KS</a>
+    </div>
+    <div class="footer__social">
+      <a href="#"><img src="img/mdi_instagram.png" alt="Instagram" /></a>
+      <a href="#"><img src="img/typcn_social-facebook.png" alt="Facebook" /></a>
+      <img src="img/242642197_111993074565451_2735216135048740337_n-Photoroom 1.png" alt="Aris Logo" class="footer__logo" />
+    </div>
+  </div>
+  <p class="footer__credits">Web Created by: <img src="img/Logo blanco ScaleX.png" alt="ScaleX" class="footer__scalex" /></p>
+</footer>
+
+
+    <script src="js/style.js"></script>
+    <script src="js/mapa-dinamico.js"></script>
   </body>
 </html>
