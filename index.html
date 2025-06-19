@@ -201,24 +201,30 @@
         <div class="dates__info">
           <div class="dates__locations" id="location-container">
   
-        </div>
-        
-        
-        <iframe
-          id="dynamic-map"
-          class="dates__map"
-          width="100%"
-          height="300"
-          frameborder="0"
-          style="border:0"
-          allowfullscreen
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+            </div>
+            
+            
+            <iframe
+              id="dynamic-map"
+              class="dates__map"
+              width="100%"
+              height="300"
+              frameborder="0"
+              style="border:0"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
 
+           
           </div>
         </div>
       </div>
+
+      <div class="calendar-button-wrapper">
+  <a id="calendar-button" class="calendar-button" href="#" target="_blank">Add Event to Calendar</a>
+
+</div>
 
       
     </section>
@@ -229,7 +235,7 @@
    <section id="contact" class="section contact">
   <div class="contact__header">
     <h2 class="section__title">
-      <span class="title-highlight">Panning an event?</span><br />
+      <span class="title-highlight">Planning an event?</span><br />
       <span class="title-bold">TAKE US WITH YOU!</span>
     </h2>
   </div>
@@ -271,6 +277,16 @@
   <p class="footer__credits">Web Created by: <img src="img/Logo blanco ScaleX.png" alt="ScaleX" class="footer__scalex" /></p>
 </footer>
 
+<button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+  ↑
+</button>
+
+<div id="menu-modal" class="menu-modal">
+  <div class="menu-modal__content">
+    <button class="menu-modal__close">&times;</button>
+    <img src="img/menu.png" alt="Nuestro menú" />
+  </div>
+</div>
 
     <script src="js/style.js"></script>
     <script src="js/mapa-dinamico.js"></script>

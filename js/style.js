@@ -24,3 +24,19 @@ document.addEventListener("DOMContentLoaded", () => {
     track.scrollLeft -= getItemWidth();
   });
 });
+
+const scrollBtn = document.getElementById("scrollToTop");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > window.innerHeight / 2) {
+    scrollBtn.classList.add("visible");
+  } else {
+    scrollBtn.classList.remove("visible");
+  }
+});
+
+scrollBtn.addEventListener("click", () => {
+  document.getElementById("home").scrollIntoView({
+    behavior: "smooth",
+  });
+});

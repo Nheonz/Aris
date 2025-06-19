@@ -486,6 +486,28 @@ body {
   flex: 1;
 }
 
+.calendar-button-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.calendar-button {
+  display: inline-block;
+  background-color: #b5fd47;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  color: #1a3d2c;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s ease;
+}
+
+.calendar-button:hover {
+  background-color: #a0eb3c;
+}
+
 /* =======================================
    CONTACT SECTION
 ======================================= */
@@ -643,6 +665,36 @@ body {
   height: 14px;
   vertical-align: middle;
   margin-left: 4px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background-color: #a4f656;
+  color: #1a3d2c;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.scroll-to-top:hover {
+  background-color: #90e14b;
 }
 
 /* ======================================
