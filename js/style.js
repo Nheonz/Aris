@@ -52,9 +52,18 @@ scrollBtn.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("menu-toggle");
   const nav = document.querySelector(".header__nav");
+  const navLinks = document.querySelectorAll(".header__nav a"); // ✅ esta línea faltaba
 
   toggle.addEventListener("click", () => {
     toggle.classList.toggle("open");
     nav.classList.toggle("open");
+  });
+
+  // ✅ cerrar el menú al hacer clic en un enlace
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      toggle.classList.remove("open");
+      nav.classList.remove("open");
+    });
   });
 });
