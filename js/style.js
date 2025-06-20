@@ -16,15 +16,23 @@ document.addEventListener("DOMContentLoaded", () => {
     return item.offsetWidth + margin;
   };
 
+  const scrollSmooth = (distance) => {
+    track.scrollTo({
+      left: track.scrollLeft + distance,
+      behavior: "smooth",
+    });
+  };
+
   nextBtn.addEventListener("click", () => {
-    track.scrollLeft += getItemWidth();
+    scrollSmooth(getItemWidth());
   });
 
   prevBtn.addEventListener("click", () => {
-    track.scrollLeft -= getItemWidth();
+    scrollSmooth(-getItemWidth());
   });
 });
 
+// === Botón de volver al inicio ===
 const scrollBtn = document.getElementById("scrollToTop");
 
 window.addEventListener("scroll", () => {
@@ -38,5 +46,15 @@ window.addEventListener("scroll", () => {
 scrollBtn.addEventListener("click", () => {
   document.getElementById("home").scrollIntoView({
     behavior: "smooth",
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.querySelector(".header__nav");
+
+  toggle.addEventListener("click", () => {
+    toggle.classList.toggle("open");
+    nav.classList.toggle("open");
   });
 });
