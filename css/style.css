@@ -1015,7 +1015,8 @@ body {
   }
 
   .header__logo img {
-    max-height: 40px; /* 🔽 Opcional: reduce el tamaño del logo */
+    margin-top: 0.1rem;
+    max-height: 30px; /* 🔽 Opcional: reduce el tamaño del logo */
   }
   .header__container {
     flex-direction: row;
