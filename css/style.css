@@ -1010,15 +1010,22 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .header {
+    padding: 0rem 0; /* 🔽 Reduce la altura del header solo en móvil */
+  }
+
+  .header__logo img {
+    max-height: 40px; /* 🔽 Opcional: reduce el tamaño del logo */
+  }
   .header__container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem -1;
+    padding: 0rem 1;
   }
 
   .header__logo img {
-    max-height: 50px;
+    max-height: px;
   }
 
   .menu-toggle {
